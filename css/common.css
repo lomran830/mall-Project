@@ -1,0 +1,43 @@
+.row .part {
+  margin: auto;
+  cursor: pointer;
+  position: relative;
+  width: 200px;
+  height: 291px; }
+  .row .part img {
+    width: 200px;
+    height: 291px;
+    position: relative; }
+  .row .part .hide {
+    display: none;
+    position: absolute;
+    top: 251px;
+    left: 0;
+    background: #ffffffa1;
+    width: 100%; }
+  .row .part span {
+    position: relative; }
+
+a.a {
+  text-decoration: none;
+  position: relative;
+  top: 97px; }
+  a.a .hvr-rectangle-out::before {
+    content: "";
+    background: #fff !important; }
+  a.a .butn {
+    outline: 0;
+    border: 1px solid #1ea6e4;
+    background-color: #1ea6e4;
+    padding: 13px 33px;
+    color: #f4f3ef;
+    font-weight: bold;
+    font-style: italic;
+    transition: all .3s ease-in-out; }
+    a.a .butn:hover {
+      background: #fff;
+      color: #1ea6e4; }
+    a.a .butn svg {
+      margin-left: 10px; }
+
+/*# sourceMappingURL=common.css.map */

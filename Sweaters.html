@@ -1,0 +1,998 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Mall-Clothes - Women -> Sweaters</title>
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/dresses.css">
+    <link rel="stylesheet" href="css/sweater.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="Hover-master\css\hover-min.css">
+    <link rel="stylesheet" href="bootstrap4/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="fonts/all.css" />
+    <script src="fonts/all.js"></script>
+    <script src="js/jquery-3.4.0.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="WOW-master\css\libs\animate.css">
+</head>
+<body>
+    <div class="container">
+      <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+          <!-- Brand -->
+          <a class="navbar-brand" href="index.html" title="The Top">
+            <img
+              src="https://images.pexels.com/photos/291762/pexels-photo-291762.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+              class="hide_shadow">
+            TOP
+            <span class="logo">FUN.</span>
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+    
+          <!-- Links -->
+          <div class="collapse navbar-collapse justify-content-center" id="collapsibleNavbar">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Home</a>
+              </li>
+              <li class="nav-item click-about" id="about_link">
+                <a class="nav-link abut" href="#about">About</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                  Women
+                </a>
+                <div class="dropdown-menu">
+                  <a class="dropdown-item" href="dresses.html">Dresses</a>
+                  <a class="dropdown-item" href="shoses.html">Shoses</a>
+                  <a class="dropdown-item" href="Sweaters.html">Sweaters</a>
+                  <a class="dropdown-item" href="accessories.html">Accessories</a>
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                  Man
+                </a>
+                <div class="dropdown-menu">
+                  <a class="dropdown-item" href="trouser.html">Trouser</a>
+                  <a class="dropdown-item" href="T-shirt.html">Shirts</a>
+                  <a class="dropdown-item" href="men-shoses.html">Shoses</a>
+                </div>
+              </li>
+    
+              <!-- Dropdown -->
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                  Children
+                </a>
+                <div class="dropdown-menu">
+                  <a class="dropdown-item" href="girlchild.html">Girls</a>
+                  <a class="dropdown-item" href="boy.html">Boy</a>
+                </div>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="log.html">LogIn</a>
+              </li>
+              <li class="nav-item nav_search">
+                <div class="search">
+                  <div class="">
+                    <div class="col-lg-10">
+                      <div class="group">
+                        <input type="text" name="" value="" onkeypress="return searchInput(event)" placeholder="Search for "
+                          id=search><span id="empty_close"><i class="fas fa-times"></i></span>
+                      </div>
+                    </div>
+                    <div class="col-lg-2">
+                      <!--<button type="button" name="button" id="sea-btn">Search</button>-->
+                    </div>
+                  </div>
+                  <p id="parg"></p>
+                </div>
+              </li>
+              <li class="nav-item hover" id="hello">
+                <a class="nav-link" id="card"><i class="fas fa-cart-arrow-down"></i><sup id="change">0</sup></a>
+                <div class="hide" id="hide">
+                  Hi, We wish the fun for you.
+                  <p>The Total Price is : <span id="total">0$</span></p>
+                  <button id="buy">Buy</button> <span id="clear">Clear All</span>
+                </div>
+    
+              </li>
+              <li class="nav-item hover">
+                <p class="done" id="done">Successfully done !!</p>
+                <p class="done" id="sorry">Sorry, You Don't Select Any Thing!!</p>
+              </li>
+    
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+
+    <!--background-->
+<div class="info">
+  <div class="container">
+  </div>
+</div>
+<!-- Collection -->
+<div class="collection">
+    <div class="container">
+        <div class="row">
+                <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+                    <div class="collect collect1">
+                        <div class="image">
+                          <div class="mgs mg">
+                              <img src="imges/Sweaters/sweaters1.jpg" alt="dress1" class="activation dress1" data-place="34.5">
+                            <span>
+                              <img src="imges/close.png" alt="" class="hide_shadow">
+                            </span>
+                          </div>
+                          <div class="mgs mg2">
+                              <img src="imges/Sweaters/sweaters1(1).jpg" alt="dress2"  class="dress2" data-place="34.5">
+                            <span>
+                              <img src="imges/close.png" alt="" class="hide_shadow">
+                            </span>
+                          </div>
+
+                        </div>
+                        <div class="caption">
+                            <ul class="list-unstyled">
+                                <li class="active dress1" style="background-color: #e6d8cb;"></li>
+                                <li class="dress2" style="background-color: #e3d0c2;"></li>
+                                </ul>
+                                <p>was: $69.00</p>
+                                <p>Now: $34.50 <span>40% off</span></p>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                                <span>Free Delivery</span>
+                        </div>
+                    </div>
+                </div>
+            <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+                <div class="collect collect2_2">
+                    <div class="image">
+                      <div class="mgs mg3">
+                          <img src="imges/Sweaters/sweaters2.jpg" alt="dress2" class="activation sweaters2" data-place="29.4">
+                        <span>
+                          <img src="imges/close.png" alt="" class="hide_shadow">
+                        </span>
+                      </div>
+                      <div class="mgs mg4">
+                          <img src="imges/Sweaters/sweaters2(1).jpg" alt="dress2" class="sweaters2_2" data-place="29.4">
+                        <span>
+                          <img src="imges/close.png" alt="" class="hide_shadow">
+                        </span>
+                      </div>
+                      <div class="mgs mg5">
+                        <img src="imges/Sweaters/sweaters2(3).jpg" alt="dress2" class="sweaters2_3" data-place="29.4">
+                        <span>
+                          <img src="imges/close.png" alt="" class="hide_shadow">
+                        </span>
+                      </div>
+                      <div class="mgs mg6">
+                        <img src="imges/Sweaters/sweaters2(2).jpg" alt="dress2" class="sweaters2_4" data-place="29.4">
+                        <span>
+                          <img src="imges/close.png" alt="" class="hide_shadow">
+                        </span>
+                      </div>
+                      <div class="mgs mg7">
+                        <img src="imges/Sweaters/sweaters2(4).jpg" alt="dress2" class="sweaters2_5" data-place="29.4">
+                          <span>
+                            <img src="imges/close.png" alt="" class="hide_shadow">
+                          </span>
+                      </div>
+
+                    </div>
+                    <div class="caption">
+                        <ul class="list-unstyled">
+                            <li class="active sweaters2" style="background-color: #e7e5e5;"></li>
+                            <li class="sweaters2_2" style="background-color: #000;"></li>
+                            <li class="sweaters2_3" style="background-color: #f8d8d8;"></li>
+                            <li class="sweaters2_4" style="background-color: #009688;"></li>
+                            <li class="sweaters2_5" style="background-color: #f3d7d7;"></li>
+                            </ul>
+                            <p>was: $59.00</p>
+                            <p>Now: $29.40 <span>40% off</span></p>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                            <span>Free Delivery</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+                <div class="collect collect3">
+                    <div class="image">
+                      <div class="mgs mg8">
+                        <img src="imges/Sweaters/sweater3.jpg" alt="dress3" class="activation sweater3" data-place="27">
+                          <span>
+                            <img src="imges/close.png" alt="" class="hide_shadow">
+                          </span>
+                      </div>
+                      <div class="mgs mg9">
+                      <img src="imges/Sweaters/sweater3(1).jpg" alt="dress3" class="sweater3_1" data-place="27">
+                          <span>
+                            <img src="imges/close.png" alt="" class="hide_shadow">
+                          </span>
+                      </div>
+
+                    </div>
+                    <div class="caption">
+                        <ul class="list-unstyled">
+                            <li class="active sweater3" style="background-color: #f44336e8;"></li>
+                            <li class="sweater3_1" style="background-color: #bdbdbd;"></li>
+                            </ul>
+                            <p>was: $45.00</p>
+                            <p>Now: $27.00 <span>40% off</span></p>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <span>Free Delivery</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+                <div class="collect collect4">
+                    <div class="image">
+                      <div class="mgs mg10">
+                    <img src="imges/Sweaters/sweater4.jpg" alt="dress1" class="activation" data-place="39.9">
+                          <span>
+                            <img src="imges/close.png" alt="" class="hide_shadow">
+                          </span>
+                      </div>
+
+                    </div>
+                    <div class="caption">
+                            <p>was: $56.00</p>
+                            <p>Now: $39.90 <span>40% off</span></p>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <span>Free Delivery</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+                <div class="collect collect5">
+                    <div class="image">
+                      <div class="mgs mg11">
+                    <img src="imges/Sweaters/sweater5.jpg" alt="dress1" class="activation dress1" data-place="39.9">
+                          <span>
+                            <img src="imges/close.png" alt="" class="hide_shadow">
+                          </span>
+                      </div>
+
+                    </div>
+                    <div class="caption">
+                            <p>was: $78.00</p>
+                            <p>Now: $39.90 <span>40% off</span></p>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                            <span>Free Delivery</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+            <div class="collect">
+                <div class="image">
+                  <div class="mgs mg12">
+                <img src="imges/Sweaters/sweater6.jpg" alt="dress2" class="activation" data-place="35.4">
+                      <span>
+                        <img src="imges/close.png" alt="" class="hide_shadow">
+                      </span>
+                  </div>
+
+                </div>
+                <div class="caption">
+                        <p>was: $70.00</p>
+                        <p>Now: $35.40 <span>40% off</span></p>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                        <span>Free Delivery</span>
+                </div>
+            </div>
+        </div>
+            <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+            <div class="collect">
+                <div class="image">
+                  <div class="mgs mg13">
+                <img src="imges/Sweaters/sweater7.jpg" alt="dress3" class="activation" data-place="40">
+                      <span>
+                        <img src="imges/close.png" alt="" class="hide_shadow">
+                      </span>
+                  </div>
+
+                </div>
+                <div class="caption">
+                        <p>was: $49.00</p>
+                        <p>Now: $40.00 <span>40% off</span></p>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                        <span>Free Delivery</span>
+                </div>
+            </div>
+        </div>
+            <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+              <div class="collect">
+                  <div class="image">
+                    <div class="mgs mg14">
+                <img src="imges/Sweaters/sweater8.jpg" alt="dress1" class="activation dress1" data-place="58.8">
+                        <span>
+                          <img src="imges/close.png" alt="" class="hide_shadow">
+                        </span>
+                    </div>
+
+                  </div>
+                  <div class="caption">
+                          <p>was: $98.00</p>
+                          <p>Now: $58.80 <span>40% off</span></p>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="far fa-star"></i>
+                          <span>Free Delivery</span>
+                  </div>
+              </div>
+          </div>
+        </div>
+    <div class="row">
+        <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+            <div class="collect">
+                <div class="image">
+                  <div class="mgs mg15">
+                    <img src="imges/Sweaters/sweater9.jpg" alt="dress1" class="activation dress1" data-place="39.9">
+                      <span>
+                        <img src="imges/close.png" alt="" class="hide_shadow">
+                      </span>
+                  </div>
+
+                </div>
+                <div class="caption">
+                        <p>was: $56.00</p>
+                        <p>Now: $39.90 <span>40% off</span></p>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                        <span>Free Delivery</span>
+                </div>
+            </div>
+        </div>
+    <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+        <div class="collect">
+            <div class="image">
+              <div class="mgs mg16">
+                <img src="imges/women/dress10.jpg" alt="dress2" class="activation" data-place="77.4">
+                  <span>
+                    <img src="imges/close.png" alt="" class="hide_shadow">
+                  </span>
+              </div>
+
+            </div>
+            <div class="caption">
+                    <p>was: $129.00</p>
+                    <p>Now: $77.40 <span>40% off</span></p>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                    <span>Free Delivery</span>
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+        <div class="collect">
+            <div class="image">
+              <div class="mgs mg17">
+                <img src="imges/Sweaters/sweater11.jpg" alt="dress3" class="activation" data-place="27">
+                  <span>
+                    <img src="imges/close.png" alt="" class="hide_shadow">
+                  </span>
+              </div>
+
+            </div>
+            <div class="caption">
+                    <p>was: $45.00</p>
+                    <p>Now: $27.00 <span>40% off</span></p>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                    <span>Free Delivery</span>
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+        <div class="collect">
+            <div class="image">
+              <div class="mgs mg18">
+                <img src="imges/Sweaters/sweater12.jpg" alt="dress1" class="activation dress1" data-place="39.9">
+                  <span>
+                    <img src="imges/close.png" alt="" class="hide_shadow">
+                  </span>
+              </div>
+
+            </div>
+            <div class="caption">
+                    <p>was: $56.00</p>
+                    <p>Now: $39.90 <span>40% off</span></p>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                    <span>Free Delivery</span>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+        <div class="collect">
+            <div class="image">
+              <div class="mgs mg19">
+                <img src="imges/Sweaters/sweater13.jpg" alt="dress1" class="activation dress1" data-place="39.9">
+                  <span>
+                    <img src="imges/close.png" alt="" class="hide_shadow">
+                  </span>
+              </div>
+
+            </div>
+            <div class="caption">
+                    <p>was: $56.00</p>
+                    <p>Now: $39.90 <span>40% off</span></p>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                    <span>Free Delivery</span>
+            </div>
+        </div>
+    </div>
+<div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+    <div class="collect">
+        <div class="image">
+          <div class="mgs mg20">
+            <img src="imges/Sweaters/sweater14.jpg" alt="dress2" class="activation" data-place="77.4">
+              <span>
+                <img src="imges/close.png" alt="" class="hide_shadow">
+              </span>
+          </div>
+
+        </div>
+        <div class="caption">
+                <p>was: $129.00</p>
+                <p>Now: $77.40 <span>40% off</span></p>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+                <span>Free Delivery</span>
+        </div>
+    </div>
+</div>
+<div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+    <div class="collect">
+        <div class="image">
+          <div class="mgs mg21">
+            <img src="imges/Sweaters/sweater15.jpg" alt="dress3" class="activation" data-place="27">
+              <span>
+                <img src="imges/close.png" alt="" class="hide_shadow">
+              </span>
+          </div>
+
+        </div>
+        <div class="caption">
+                <p>was: $45.00</p>
+                <p>Now: $27.00 <span>40% off</span></p>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+                <span>Free Delivery</span>
+        </div>
+    </div>
+</div>
+<div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+    <div class="collect">
+        <div class="image">
+          <div class="mgs mg22">
+          <img src="imges/Sweaters/sweater16.jpg" alt="dress1" class="activation dress1" data-place="39.9">
+              <span>
+                <img src="imges/close.png" alt="" class="hide_shadow">
+              </span>
+          </div>
+
+        </div>
+        <div class="caption">
+                <p>was: $56.00</p>
+                <p>Now: $39.90 <span>40% off</span></p>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+                <span>Free Delivery</span>
+        </div>
+    </div>
+</div>
+</div>
+
+<div class="row">
+    <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+        <div class="collect ">
+            <div class="image">
+              <div class="mgs mg23">
+                <img src="imges/Sweaters/sweater17.jpg" alt="dress1" class="activation dress1" data-place="39.9">
+                  <span>
+                    <img src="imges/close.png" alt="" class="hide_shadow">
+                  </span>
+              </div>
+
+            </div>
+            <div class="caption">
+                    <p>was: $56.00</p>
+                    <p>Now: $39.90 <span>40% off</span></p>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                    <span>Free Delivery</span>
+            </div>
+        </div>
+    </div>
+<div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+    <div class="collect">
+        <div class="image">
+          <div class="mgs mg24">
+            <img src="imges/Sweaters/sweater18.jpg" alt="dress2" class="activation" data-place="77.4">
+              <span>
+                <img src="imges/close.png" alt="" class="hide_shadow">
+              </span>
+          </div>
+
+        </div>
+        <div class="caption">
+                <p>was: $129.00</p>
+                <p>Now: $77.40 <span>40% off</span></p>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+                <span>Free Delivery</span>
+        </div>
+    </div>
+</div>
+<div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+    <div class="collect">
+        <div class="image">
+          <div class="mgs mg25">
+            <img src="imges/Sweaters/sweater19.jpg" alt="dress3" class="activation" data-place="27">
+              <span>
+                <img src="imges/close.png" alt="" class="hide_shadow">
+              </span>
+          </div>
+
+        </div>
+        <div class="caption">
+                <p>was: $45.00</p>
+                <p>Now: $27.00 <span>40% off</span></p>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+                <span>Free Delivery</span>
+        </div>
+    </div>
+</div>
+<div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+    <div class="collect">
+        <div class="image">
+          <div class="mgs mg26">
+            <img src="imges/Sweaters/sweater20.jpg" alt="dress1" class="activation" data-place="39.9">
+              <span>
+                <img src="imges/close.png" alt="" class="hide_shadow">
+              </span>
+          </div>
+
+        </div>
+        <div class="caption">
+                <p>was: $56.00</p>
+                <p>Now: $39.90 <span>40% off</span></p>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+                <span>Free Delivery</span>
+        </div>
+    </div>
+</div>
+</div>
+<div class="row">
+    <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+        <div class="collect collect1">
+            <div class="image">
+              <div class="mgs mg27">
+                  <img src="imges/Sweaters/sweater21.jpg" alt="dress1" class="activation dress1" data-place="39.9">
+                  <span>
+                    <img src="imges/close.png" alt="" class="hide_shadow">
+                  </span>
+              </div>
+
+            </div>
+            <div class="caption">
+                    <p>was: $56.00</p>
+                    <p>Now: $39.90 <span>40% off</span></p>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                    <span>Free Delivery</span>
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+      <div class="collect">
+          <div class="image">
+            <div class="mgs mg28">
+                  <img src="imges/Sweaters/sweater22.jpg" alt="dress2" class="activation" data-place="77.4">
+                <span>
+                  <img src="imges/close.png" alt="" class="hide_shadow">
+                </span>
+            </div>
+
+          </div>
+          <div class="caption">
+                  <p>was: $129.00</p>
+                  <p>Now: $77.40 <span>40% off</span></p>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star-half-alt"></i>
+                  <span>Free Delivery</span>
+          </div>
+      </div>
+</div>
+<div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+    <div class="collect">
+        <div class="image">
+          <div class="mgs mg29">
+                <img src="imges/Sweaters/sweater23.jpg" alt="dress3" class="activation" data-place="27">
+              <span>
+                <img src="imges/close.png" alt="" class="hide_shadow">
+              </span>
+          </div>
+
+        </div>
+        <div class="caption">
+                <p>was: $45.00</p>
+                <p>Now: $27.00 <span>40% off</span></p>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+                <span>Free Delivery</span>
+        </div>
+    </div>
+</div>
+<div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+    <div class="collect">
+        <div class="image">
+          <div class="mgs mg30">
+                <img src="imges/Sweaters/sweater24.jpg" alt="dress1" class="activation dress1" data-place="39.9">
+              <span>
+                <img src="imges/close.png" alt="" class="hide_shadow">
+              </span>
+          </div>
+
+        </div>
+        <div class="caption">
+                <p>was: $56.00</p>
+                <p>Now: $39.90 <span>40% off</span></p>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+                <span>Free Delivery</span>
+        </div>
+    </div>
+</div>
+</div>
+<div class="row">
+    <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+        <div class="collect ">
+            <div class="image">
+              <div class="mgs mg31">
+                      <img src="imges/Sweaters/sweater25.jpg" alt="dress1" class="activation" data-place="39.9">
+                  <span>
+                    <img src="imges/close.png" alt="" class="hide_shadow">
+                  </span>
+              </div>
+
+            </div>
+            <div class="caption">
+                    <p>was: $56.00</p>
+                    <p>Now: $39.90 <span>40% off</span></p>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                    <span>Free Delivery</span>
+            </div>
+        </div>
+    </div>
+<div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+    <div class="collect">
+        <div class="image">
+          <div class="mgs mg32">
+                  <img src="imges/Sweaters/sweater26.jpg" alt="dress2" class="activation" data-place="77.4">
+              <span>
+                <img src="imges/close.png" alt="" class="hide_shadow">
+              </span>
+          </div>
+
+        </div>
+        <div class="caption">
+                <p>was: $129.00</p>
+                <p>Now: $77.40 <span>40% off</span></p>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+                <span>Free Delivery</span>
+        </div>
+    </div>
+</div>
+<div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+    <div class="collect">
+        <div class="image">
+          <div class="mgs mg33">
+                  <img src="imges/Sweaters/sweater27.jpg" alt="dress3" class="activation" data-place="27">
+              <span>
+                <img src="imges/close.png" alt="" class="hide_shadow">
+              </span>
+          </div>
+
+        </div>
+        <div class="caption">
+                <p>was: $45.00</p>
+                <p>Now: $27.00 <span>40% off</span></p>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+                <span>Free Delivery</span>
+        </div>
+    </div>
+</div>
+<div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+    <div class="collect collect4">
+        <div class="image">
+          <div class="mgs mg34">
+                  <img src="imges/Sweaters/sweater28.jpg" alt="dress1" class="activation dress1" data-place="39.9">
+              <span>
+                <img src="imges/close.png" alt="" class="hide_shadow">
+              </span>
+          </div>
+
+        </div>
+        <div class="caption">
+                <p>was: $56.00</p>
+                <p>Now: $39.90 <span>40% off</span></p>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+                <span>Free Delivery</span>
+        </div>
+    </div>
+</div>
+</div>
+<div class="row">
+    <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+        <div class="collect collect1">
+            <div class="image">
+              <div class="mgs mg35">
+                      <img src="imges/Sweaters/sweater29.jpg" alt="dress1" class="activation dress1" data-place="39.9">
+                  <span>
+                    <img src="imges/close.png" alt="" class="hide_shadow">
+                  </span>
+              </div>
+
+            </div>
+            <div class="caption">
+                    <p>was: $56.00</p>
+                    <p>Now: $39.90 <span>40% off</span></p>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                    <span>Free Delivery</span>
+            </div>
+        </div>
+    </div>
+<div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+    <div class="collect">
+        <div class="image">
+          <div class="mgs mg36">
+                <img src="imges/Sweaters/sweater30.jpg" alt="dress2" class="activation" data-place="77.4">
+              <span>
+                <img src="imges/close.png" alt="" class="hide_shadow">
+              </span>
+          </div>
+
+        </div>
+        <div class="caption">
+                <p>was: $129.00</p>
+                <p>Now: $77.40 <span>40% off</span></p>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+                <span>Free Delivery</span>
+        </div>
+    </div>
+</div>
+<div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+    <div class="collect">
+        <div class="image">
+          <div class="mgs mg37">
+              <img src="imges/Sweaters/sweater31.jpg" alt="dress3" class="activation" data-place="27">
+              <span>
+                <img src="imges/close.png" alt="" class="hide_shadow">
+              </span>
+          </div>
+
+        </div>
+        <div class="caption">
+                <p>was: $45.00</p>
+                <p>Now: $27.00 <span>40% off</span></p>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+                <span>Free Delivery</span>
+        </div>
+    </div>
+</div>
+<div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+    <div class="collect">
+        <div class="image">
+          <div class="mgs mg38">
+            <img src="imges/Sweaters/sweater32.jpg" alt="dress1" class="activation dress1" data-place="39.9">
+              <span>
+                <img src="imges/close.png" alt="" class="hide_shadow">
+              </span>
+          </div>
+
+        </div>
+        <div class="caption">
+                <p>was: $56.00</p>
+                <p>Now: $39.90 <span>40% off</span></p>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+                <span>Free Delivery</span>
+        </div>
+    </div>
+</div>
+</div>
+
+    </div>
+</div>
+<!--load-->
+<div class="load">
+    <i class="fas fa-spinner"></i>
+</div>
+
+        <!---------------Footer------------->
+    <div class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-3 col-md-4">
+            <div class="parts">
+              <h2>Women</h2>
+              <ul class="list-unstyled">
+                <li><a href="dresses.html">Dresses</a></li>
+                <li><a href="shoses.html">Shoses</a></li>
+                <li><a href="Sweaters.html">Sweaters</a></li>
+                <li><a href="accessories.html">Accessories</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4">
+            <div class="parts">
+              <h2>Men</h2>
+              <ul class="list-unstyled">
+                <li><a href="trouser.html">Trouser</a></li>
+                <li><a href="T-shirt.html">Shirts</a></li>
+                <li><a href="shoses.html">Shoses</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4">
+            <div class="parts">
+              <h2>Children</h2>
+              <ul class="list-unstyled">
+                <li><a href="girlChild.html">Girls</a></li>
+                <li><a href="boy.html">Boys</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4">
+            <div class="parts">
+              <h2>Social Media</h2>
+              <ul class="list-unstyled social">
+                <li><a href="https://www.facebook.com/lolo.omran.338"><i class="fab fa-facebook-f"></i></a></li>
+                <li><a href="https://www.instagram.com/lolo.omran.338/"><i class="fab fa-instagram"></i></a></li>
+                <li><a href="https://twitter.com/Loloomran8"><i class="fab fa-twitter"></i></a></li>
+                <li><a href=""><i class="fab fa-pinterest"></i></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-12">
+            <p>
+              Copyright ©2020 All rights reserved | This template is made with<i class="fas fa-heart"></i> by Alaa Omran
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+        <!----scroll-->
+        <div class="scrolltop" id="scroll">
+            <i class="fas fa-arrow-circle-up"></i>
+        </div>
+<script src="WOW-master\dist\wow.min.js"></script>
+<script src="bootstrap4/js/bootstrap.min.js"></script>
+<script src="js/plugin.js"></script>
+<script src="js/dresses.js"></script>
+<script>
+document.querySelector(".mg33 span").addEventListener("click",close)
+document.querySelector(".mg34 span").addEventListener("click",close)
+document.querySelector(".mg35 span").addEventListener("click",close)
+document.querySelector(".mg36 span").addEventListener("click",close)
+document.querySelector(".mg37 span").addEventListener("click",close)
+document.querySelector(".mg38 span").addEventListener("click",close)
+document.getElementById("abut").onclick = function(){
+  location.href = "file:///C:/Users/smart/Documents/Web%20Design/Mall/index.html#about";
+}
+new WOW().init();
+$(".row").addClass("wow fadeInDown")
+</script>
+</body>
+
+</html>

@@ -1,0 +1,28 @@
+.info{
+    background-image: url(../imges/sweaters/back.jpeg);
+    height: 23vh;
+    @media(min-width: 768px){
+        @media(max-width: 991px){
+            height: 9vh !important;
+        }
+    }
+}
+
+#hello button{
+    background: #ef5350c4;
+    border: 1px solid #fff;
+    color: #fff;
+    font-weight: bold;
+    padding: 7px 28px;
+    outline: 0;
+    &:focus{
+        outline: none;
+    }
+}
+
+#hello span{
+    color: #979696;
+    font-style: italic;
+    text-decoration: underline;
+    cursor: pointer;
+}

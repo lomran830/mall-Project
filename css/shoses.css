@@ -1,0 +1,27 @@
+.info {
+  background-image: url(../imges/shoses/back.jpeg);
+  height: 54vh; }
+@media (min-width: 768px) and (max-width: 991px) {
+  .info {
+    height: 16vh !important; } }
+
+#hello button {
+  background: #ef5350c4;
+  border: 1px solid #fff;
+  color: #fff;
+  font-weight: bold;
+  padding: 7px 28px;
+  outline: 0; }
+  #hello button:focus {
+    outline: none; }
+
+#hello span {
+  color: #979696;
+  font-style: italic;
+  text-decoration: underline;
+  cursor: pointer; }
+
+.mgs span {
+  top: 14px !important; }
+
+/*# sourceMappingURL=shoses.css.map */
